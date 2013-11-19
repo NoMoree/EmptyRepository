@@ -22,6 +22,7 @@
 		8366FBC1183C1D890074532A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8366FBA0183C1D890074532A /* UIKit.framework */; };
 		8366FBC9183C1D890074532A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8366FBC7183C1D890074532A /* InfoPlist.strings */; };
 		8366FBCB183C1D890074532A /* PrivateDistributorAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBCA183C1D890074532A /* PrivateDistributorAppTests.m */; };
+		8366FBD9183C29CF0074532A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBD8183C29CF0074532A /* LogInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		8366FBC6183C1D890074532A /* PrivateDistributorAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrivateDistributorAppTests-Info.plist"; sourceTree = "<group>"; };
 		8366FBC8183C1D890074532A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8366FBCA183C1D890074532A /* PrivateDistributorAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateDistributorAppTests.m; sourceTree = "<group>"; };
+		8366FBD7183C29CF0074532A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		8366FBD8183C29CF0074532A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				8366FBB5183C1D890074532A /* DetailViewController.m */,
 				8366FBB7183C1D890074532A /* Images.xcassets */,
 				8366FBA3183C1D890074532A /* Supporting Files */,
+				8366FBD7183C29CF0074532A /* LogInViewController.h */,
+				8366FBD8183C29CF0074532A /* LogInViewController.m */,
 			);
 			path = PrivateDistributorApp;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			files = (
 				8366FBAD183C1D890074532A /* AppDelegate.m in Sources */,
 				8366FBB3183C1D890074532A /* MasterViewController.m in Sources */,
+				8366FBD9183C29CF0074532A /* LogInViewController.m in Sources */,
 				8366FBA9183C1D890074532A /* main.m in Sources */,
 				8366FBB6183C1D890074532A /* DetailViewController.m in Sources */,
 			);
