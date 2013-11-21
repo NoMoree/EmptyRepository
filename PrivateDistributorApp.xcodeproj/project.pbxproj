@@ -23,6 +23,17 @@
 		8366FBC9183C1D890074532A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8366FBC7183C1D890074532A /* InfoPlist.strings */; };
 		8366FBCB183C1D890074532A /* PrivateDistributorAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBCA183C1D890074532A /* PrivateDistributorAppTests.m */; };
 		8366FBD9183C29CF0074532A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBD8183C29CF0074532A /* LogInViewController.m */; };
+		8366FBDD183C48E50074532A /* HttpRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBDC183C48E50074532A /* HttpRequester.m */; };
+		8366FBE6183C4D9D0074532A /* AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FBE5183C4D9D0074532A /* AES256.m */; };
+		8366FC95183C7A090074532A /* CodeCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FC94183C7A090074532A /* CodeCheckViewController.m */; };
+		8366FC9C183CE86C0074532A /* RegisterCodeRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FC9B183CE86C0074532A /* RegisterCodeRequestModel.m */; };
+		8366FC9F183CEA220074532A /* RegisterRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FC9E183CEA220074532A /* RegisterRequestModel.m */; };
+		8366FCA2183D33650074532A /* FirstCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366FCA1183D33650074532A /* FirstCompanyViewController.m */; };
+		83F84EBB183D46A800CB38D0 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EBA183D46A800CB38D0 /* RegisterViewController.m */; };
+		83F84EBE183D6B6600CB38D0 /* CompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EBD183D6B6600CB38D0 /* CompanyModel.m */; };
+		83F84EC1183D861F00CB38D0 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC0183D861F00CB38D0 /* RegisterUserViewController.m */; };
+		83F84EC4183DE30100CB38D0 /* UserLoged.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC3183DE30100CB38D0 /* UserLoged.m */; };
+		83F84EC7183E570200CB38D0 /* tessssstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC6183E570200CB38D0 /* tessssstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,28 @@
 		8366FBCA183C1D890074532A /* PrivateDistributorAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateDistributorAppTests.m; sourceTree = "<group>"; };
 		8366FBD7183C29CF0074532A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		8366FBD8183C29CF0074532A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		8366FBDB183C48E50074532A /* HttpRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequester.h; sourceTree = "<group>"; };
+		8366FBDC183C48E50074532A /* HttpRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequester.m; sourceTree = "<group>"; };
+		8366FBE4183C4D9D0074532A /* AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES256.h; sourceTree = "<group>"; };
+		8366FBE5183C4D9D0074532A /* AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES256.m; sourceTree = "<group>"; };
+		8366FC93183C7A090074532A /* CodeCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeCheckViewController.h; sourceTree = "<group>"; };
+		8366FC94183C7A090074532A /* CodeCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeCheckViewController.m; sourceTree = "<group>"; };
+		8366FC9A183CE86C0074532A /* RegisterCodeRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterCodeRequestModel.h; sourceTree = "<group>"; };
+		8366FC9B183CE86C0074532A /* RegisterCodeRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterCodeRequestModel.m; sourceTree = "<group>"; };
+		8366FC9D183CEA220074532A /* RegisterRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterRequestModel.h; sourceTree = "<group>"; };
+		8366FC9E183CEA220074532A /* RegisterRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterRequestModel.m; sourceTree = "<group>"; };
+		8366FCA0183D33650074532A /* FirstCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCompanyViewController.h; sourceTree = "<group>"; };
+		8366FCA1183D33650074532A /* FirstCompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCompanyViewController.m; sourceTree = "<group>"; };
+		83F84EB9183D46A800CB38D0 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		83F84EBA183D46A800CB38D0 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		83F84EBC183D6B6600CB38D0 /* CompanyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyModel.h; sourceTree = "<group>"; };
+		83F84EBD183D6B6600CB38D0 /* CompanyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyModel.m; sourceTree = "<group>"; };
+		83F84EBF183D861F00CB38D0 /* RegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUserViewController.h; sourceTree = "<group>"; };
+		83F84EC0183D861F00CB38D0 /* RegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUserViewController.m; sourceTree = "<group>"; };
+		83F84EC2183DE30100CB38D0 /* UserLoged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoged.h; sourceTree = "<group>"; };
+		83F84EC3183DE30100CB38D0 /* UserLoged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoged.m; sourceTree = "<group>"; };
+		83F84EC5183E570200CB38D0 /* tessssstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tessssstViewController.h; sourceTree = "<group>"; };
+		83F84EC6183E570200CB38D0 /* tessssstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tessssstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +151,9 @@
 		8366FBA2183C1D890074532A /* PrivateDistributorApp */ = {
 			isa = PBXGroup;
 			children = (
+				8366FC99183CE7290074532A /* RequestModels */,
+				8366FC8D183C78970074532A /* ViewControllers */,
+				8366FBDA183C48990074532A /* Data */,
 				8366FBAB183C1D890074532A /* AppDelegate.h */,
 				8366FBAC183C1D890074532A /* AppDelegate.m */,
 				8366FBAE183C1D890074532A /* Main.storyboard */,
@@ -127,8 +163,6 @@
 				8366FBB5183C1D890074532A /* DetailViewController.m */,
 				8366FBB7183C1D890074532A /* Images.xcassets */,
 				8366FBA3183C1D890074532A /* Supporting Files */,
-				8366FBD7183C29CF0074532A /* LogInViewController.h */,
-				8366FBD8183C29CF0074532A /* LogInViewController.m */,
 			);
 			path = PrivateDistributorApp;
 			sourceTree = "<group>";
@@ -160,6 +194,51 @@
 				8366FBC7183C1D890074532A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8366FBDA183C48990074532A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8366FBDB183C48E50074532A /* HttpRequester.h */,
+				8366FBDC183C48E50074532A /* HttpRequester.m */,
+				8366FBE4183C4D9D0074532A /* AES256.h */,
+				8366FBE5183C4D9D0074532A /* AES256.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		8366FC8D183C78970074532A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8366FCA0183D33650074532A /* FirstCompanyViewController.h */,
+				8366FCA1183D33650074532A /* FirstCompanyViewController.m */,
+				8366FBD7183C29CF0074532A /* LogInViewController.h */,
+				8366FBD8183C29CF0074532A /* LogInViewController.m */,
+				8366FC93183C7A090074532A /* CodeCheckViewController.h */,
+				8366FC94183C7A090074532A /* CodeCheckViewController.m */,
+				83F84EB9183D46A800CB38D0 /* RegisterViewController.h */,
+				83F84EBA183D46A800CB38D0 /* RegisterViewController.m */,
+				83F84EBF183D861F00CB38D0 /* RegisterUserViewController.h */,
+				83F84EC0183D861F00CB38D0 /* RegisterUserViewController.m */,
+				83F84EC5183E570200CB38D0 /* tessssstViewController.h */,
+				83F84EC6183E570200CB38D0 /* tessssstViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8366FC99183CE7290074532A /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				8366FC9A183CE86C0074532A /* RegisterCodeRequestModel.h */,
+				8366FC9B183CE86C0074532A /* RegisterCodeRequestModel.m */,
+				8366FC9D183CEA220074532A /* RegisterRequestModel.h */,
+				8366FC9E183CEA220074532A /* RegisterRequestModel.m */,
+				83F84EBC183D6B6600CB38D0 /* CompanyModel.h */,
+				83F84EBD183D6B6600CB38D0 /* CompanyModel.m */,
+				83F84EC2183DE30100CB38D0 /* UserLoged.h */,
+				83F84EC3183DE30100CB38D0 /* UserLoged.m */,
+			);
+			name = RequestModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +338,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8366FBE6183C4D9D0074532A /* AES256.m in Sources */,
+				8366FCA2183D33650074532A /* FirstCompanyViewController.m in Sources */,
+				8366FBDD183C48E50074532A /* HttpRequester.m in Sources */,
 				8366FBAD183C1D890074532A /* AppDelegate.m in Sources */,
 				8366FBB3183C1D890074532A /* MasterViewController.m in Sources */,
+				8366FC9F183CEA220074532A /* RegisterRequestModel.m in Sources */,
+				8366FC95183C7A090074532A /* CodeCheckViewController.m in Sources */,
+				83F84EBB183D46A800CB38D0 /* RegisterViewController.m in Sources */,
 				8366FBD9183C29CF0074532A /* LogInViewController.m in Sources */,
+				8366FC9C183CE86C0074532A /* RegisterCodeRequestModel.m in Sources */,
 				8366FBA9183C1D890074532A /* main.m in Sources */,
+				83F84EBE183D6B6600CB38D0 /* CompanyModel.m in Sources */,
+				83F84EC1183D861F00CB38D0 /* RegisterUserViewController.m in Sources */,
 				8366FBB6183C1D890074532A /* DetailViewController.m in Sources */,
+				83F84EC7183E570200CB38D0 /* tessssstViewController.m in Sources */,
+				83F84EC4183DE30100CB38D0 /* UserLoged.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +562,7 @@
 				8366FBD0183C1D890074532A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8366FBD1183C1D890074532A /* Build configuration list for PBXNativeTarget "PrivateDistributorAppTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +571,7 @@
 				8366FBD3183C1D890074532A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
