@@ -34,6 +34,10 @@
 		83F84EC1183D861F00CB38D0 /* RegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC0183D861F00CB38D0 /* RegisterUserViewController.m */; };
 		83F84EC4183DE30100CB38D0 /* UserLoged.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC3183DE30100CB38D0 /* UserLoged.m */; };
 		83F84EC7183E570200CB38D0 /* tessssstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC6183E570200CB38D0 /* tessssstViewController.m */; };
+		83F84ECA183EFC2100CB38D0 /* UserLogInRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84EC9183EFC2100CB38D0 /* UserLogInRequestModel.m */; };
+		83F84ECD183F06D400CB38D0 /* NewProductRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84ECC183F06D400CB38D0 /* NewProductRequestModel.m */; };
+		83F84ED3183F085F00CB38D0 /* AddProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84ED2183F085F00CB38D0 /* AddProductViewController.m */; };
+		83F84ED6183F4A5E00CB38D0 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F84ED5183F4A5E00CB38D0 /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,14 @@
 		83F84EC3183DE30100CB38D0 /* UserLoged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoged.m; sourceTree = "<group>"; };
 		83F84EC5183E570200CB38D0 /* tessssstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tessssstViewController.h; sourceTree = "<group>"; };
 		83F84EC6183E570200CB38D0 /* tessssstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tessssstViewController.m; sourceTree = "<group>"; };
+		83F84EC8183EFC2100CB38D0 /* UserLogInRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogInRequestModel.h; sourceTree = "<group>"; };
+		83F84EC9183EFC2100CB38D0 /* UserLogInRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogInRequestModel.m; sourceTree = "<group>"; };
+		83F84ECB183F06D400CB38D0 /* NewProductRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewProductRequestModel.h; sourceTree = "<group>"; };
+		83F84ECC183F06D400CB38D0 /* NewProductRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewProductRequestModel.m; sourceTree = "<group>"; };
+		83F84ED1183F085F00CB38D0 /* AddProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProductViewController.h; sourceTree = "<group>"; };
+		83F84ED2183F085F00CB38D0 /* AddProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProductViewController.m; sourceTree = "<group>"; };
+		83F84ED4183F4A5E00CB38D0 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		83F84ED5183F4A5E00CB38D0 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +234,8 @@
 				83F84EC0183D861F00CB38D0 /* RegisterUserViewController.m */,
 				83F84EC5183E570200CB38D0 /* tessssstViewController.h */,
 				83F84EC6183E570200CB38D0 /* tessssstViewController.m */,
+				83F84ED1183F085F00CB38D0 /* AddProductViewController.h */,
+				83F84ED2183F085F00CB38D0 /* AddProductViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +251,12 @@
 				83F84EBD183D6B6600CB38D0 /* CompanyModel.m */,
 				83F84EC2183DE30100CB38D0 /* UserLoged.h */,
 				83F84EC3183DE30100CB38D0 /* UserLoged.m */,
+				83F84EC8183EFC2100CB38D0 /* UserLogInRequestModel.h */,
+				83F84EC9183EFC2100CB38D0 /* UserLogInRequestModel.m */,
+				83F84ECB183F06D400CB38D0 /* NewProductRequestModel.h */,
+				83F84ECC183F06D400CB38D0 /* NewProductRequestModel.m */,
+				83F84ED4183F4A5E00CB38D0 /* Product.h */,
+				83F84ED5183F4A5E00CB38D0 /* Product.m */,
 			);
 			name = RequestModels;
 			sourceTree = "<group>";
@@ -339,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8366FBE6183C4D9D0074532A /* AES256.m in Sources */,
+				83F84ED6183F4A5E00CB38D0 /* Product.m in Sources */,
 				8366FCA2183D33650074532A /* FirstCompanyViewController.m in Sources */,
 				8366FBDD183C48E50074532A /* HttpRequester.m in Sources */,
 				8366FBAD183C1D890074532A /* AppDelegate.m in Sources */,
@@ -350,10 +371,13 @@
 				8366FC9C183CE86C0074532A /* RegisterCodeRequestModel.m in Sources */,
 				8366FBA9183C1D890074532A /* main.m in Sources */,
 				83F84EBE183D6B6600CB38D0 /* CompanyModel.m in Sources */,
+				83F84ED3183F085F00CB38D0 /* AddProductViewController.m in Sources */,
+				83F84ECD183F06D400CB38D0 /* NewProductRequestModel.m in Sources */,
 				83F84EC1183D861F00CB38D0 /* RegisterUserViewController.m in Sources */,
 				8366FBB6183C1D890074532A /* DetailViewController.m in Sources */,
 				83F84EC7183E570200CB38D0 /* tessssstViewController.m in Sources */,
 				83F84EC4183DE30100CB38D0 /* UserLoged.m in Sources */,
+				83F84ECA183EFC2100CB38D0 /* UserLogInRequestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

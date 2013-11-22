@@ -141,15 +141,7 @@
         NSData *plain = [secret dataUsingEncoding:NSUTF8StringEncoding];
         NSData *cipher = [plain AES256EncryptWithKey:key];
         [_registerRequest setAuthCode:[cipher description]];
-        //printf("secret = %s\n", [[cipher description] UTF8String]);
-        
-        //plain = [cipher AES256DecryptWithKey:key];
-        //printf("plain = %s\n", [[plain description] UTF8String]);
-        //printf("plain-back =>%s\n", [[[NSString alloc] initWithData:plain encoding:NSUTF8StringEncoding] UTF8String]);
-        
     }
-    
-    
     
     //email validation and adding
     if (!_registerRequest.Mails) {
@@ -239,93 +231,30 @@
             NSLog(@"\n\nError Message =>\n %@", errorMessage);
         }
         else{
-            UserLoged* logedUser = [[UserLoged alloc] init];
-            [logedUser convertToUserLoged:json];
+            if (!_logedUser) {
+                _logedUser = [[UserLoged alloc] init];
+            }
             
-            if (logedUser.SessionKey) {
+            [_logedUser convertToUserLoged:json];
+            
+            if (_logedUser.SessionKey) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    if (!_logedUser) {
-                        _logedUser = [[UserLoged alloc] init];
+                    
+                    
+                    AppDelegate *appDel=(AppDelegate*)[UIApplication sharedApplication].delegate;
+                    
+                    if (!appDel.logedUser) {
+                        appDel.logedUser = [[UserLoged alloc]init];
                     }
-                    _logedUser = logedUser;
+                    appDel.logedUser = _logedUser;
                     
-                    //if ([registerRequest.CompanyName isEqualToString:@"Administrator"]) {
-                    //    [self performSegueWithIdentifier:@"firstCompanyRegisterSegue" sender:self];
-                    //}
-                    //else{
-                    //    [self performSegueWithIdentifier:@"registrationSegue" sender:self];
-                    //}
-
-                    
-                    
-                    
-                    //if (!_registerRequest) {
-                    //    _registerRequest = [[RegisterRequestModel alloc] init];
-                    //}
-                    //_registerRequest = registerRequest;
-                    
-                    //if ([registerRequest.CompanyName isEqualToString:@"Administrator"]) {
-                        [self performSegueWithIdentifier:@"registeredSegue" sender:self];
-                    //}
-                    //else{
-                    //    [self performSegueWithIdentifier:@"registrationSegue" sender:self];
-                    //}
+                    [self performSegueWithIdentifier:@"registeredSegue" sender:self];
                 });
             }
             else{
                 NSLog(@"Undefined error, please restart the program.");
             }
         }
-
-        
-        //if (!error) {
-        //    dispatch_async(dispatch_get_main_queue(), ^{
-                //if (!_registerRequest) {
-                //    _registerRequest = [[RegisterRequestModel alloc] init];
-                //}
-                //_registerRequest = registerRequest;
-                
-                //if ([registerRequest.CompanyName isEqualToString:@"Administrator"]) {
-                //    [self performSegueWithIdentifier:@"firstCompanyRegisterSegue" sender:self];
-                //}
-                //else{
-                //    [self performSegueWithIdentifier:@"registrationSegue" sender:self];
-                //}
-                
-                
-                //[self checkLogin];
-                //[[self tableView] reloadData];
-        //    });
-        //}
-        //Models *responseCourse = [[Models alloc] init];
-        
-        //[responseCourse setAuthCode:[json objectForKey:@"AuthCode"]];
-        
-        
-        
-        //return (NSObject *)responseCourse;
-        //Do anything you want with it
-        
-        
-        // NSString* nasf = [response description];
-        //NSInteger* asd = 353;
-        //Models *newCours11e = [[Models alloc] init];
-        
-        
-        //[responseText rel];
     }];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    AppDelegate *appDel=(AppDelegate*)[UIApplication sharedApplication].delegate;
-    if ([[segue identifier] isEqualToString:@"registeredSegue"]) {
-        if (!appDel.logedUser) {
-            appDel.logedUser = [[UserLoged alloc]init];
-            //_logedUser
-        }
-        appDel.logedUser = _logedUser;
-        //[[segue destinationViewController] setUserInfo:_logedUser];
-    }
 }
 @end

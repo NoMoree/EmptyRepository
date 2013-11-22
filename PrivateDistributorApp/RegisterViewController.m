@@ -118,8 +118,8 @@
     }
     _registerRequest.Company.Name=  [[self companyNameText ]text];
     _registerRequest.Company.DisplayName=  [[self companyNameText ]text];
-    _registerRequest.Company.MoreInformation=  [[self companyNameText ]text];
-    _registerRequest.Company.Location=  [[self companyNameText ]text];
+    _registerRequest.Company.MoreInformation=  [[self companyMoreInfoText ]text];
+    _registerRequest.Company.Location=  [[self companyAddressText ]text];
     
     
     //email validation and adding
@@ -149,25 +149,17 @@
     
     //phone validation and adding
     NSMutableArray* newPhones =[[NSMutableArray alloc] init];
-    //if (!_registerRequest.Phones) {
-    //    _registerRequest.Phones = [[NSMutableArray alloc] init];
-    //}
-    //if (_registerRequest.Company.Phones.count >0) {
-    //    [_registerRequest.Company.Phones removeAllObjects];
-    //}
+    
     elementToAdd =[[self companyPhoneText1 ]text];
     if (elementToAdd.length >4) {
-        //[_registerRequest.Company.Phones addObject:elementToAdd] ;
         [newPhones addObject:elementToAdd];
     }
     elementToAdd =[[self companyPhoneText2 ]text];
     if (elementToAdd.length >4) {
-        //[_registerRequest.Company.Phones addObject:elementToAdd] ;
         [newPhones addObject:elementToAdd];
     }
     elementToAdd =[[self companyPhoneText3 ]text];
     if (elementToAdd.length >4) {
-        //[_registerRequest.Company.Phones addObject:elementToAdd] ;
         [newPhones addObject:elementToAdd];
     }
     [[_registerRequest Company] setPhones:newPhones];
@@ -192,24 +184,4 @@
         [[segue destinationViewController] setUserInfo:_registerRequest];
     }
 }
-//- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//    [self.tableView endEditing:YES];
-//    [super touchesBegan:touches withEvent:event];
-//}
-
-//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-//    [[self.tableView superView] endEditing];
-//}
-
-//- (IBAction)insertNewEmail:(id)sender {
-//    if (!_emails) {
- //       _emails = [[NSMutableArray alloc] init];
- //   }
- //   //NSString* str =[self emailText];
- //   //NSObject* email =[self emailText.NSObject];
- //   //[_emails addObject:[self emailText]];
- //  [_emails insertObject:[NSDate date] atIndex:0];
- //   NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
- //   [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//}
 @end
