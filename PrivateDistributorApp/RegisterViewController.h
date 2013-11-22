@@ -26,4 +26,5 @@
 
 - (IBAction)confirmAction:(id)sender;
 
+- (void) autoFillTextField;
 @end

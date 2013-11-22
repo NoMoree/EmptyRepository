@@ -72,8 +72,24 @@
 {
     [super viewDidLoad];
     
+    //test
+    [self autoFillTextField];
+    
     //Update View For FirstCompanyRegister
     [self configureView];
+}
+
+-(void)autoFillTextField{
+    [[self passwordText] setText:@"password"];
+    [[self firstNameText ] setText:@"firstNameText"];
+    [[self secondNameText] setText:@"secondNameText"];
+    [[self lastNameText] setText:@"lastNameText"];
+    [[self EmailText1] setText:@"user1@abv.bg"];
+    [[self EmailText2] setText:@"user2@abv.bg"];
+    [[self EmailText3] setText:@"user3@abv.bg"];
+    [[self PhoneText1] setText:@"UserPhone1"];
+    [[self PhoneText2] setText:@"UserPhone2"];
+    [[self PhoneText3] setText:@"UserPhone3"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -198,21 +214,13 @@
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
-    //NSData* testData = @"{ \"Mails\" : [ \"uuu1@abv.bg\", \"uuu2@abv.bg\", \"uuu3@abv.bg\" ], \"SecondName\" : \"SecondName\", \"RegistrationAuthCode\" : \"0sSTHAeLXVdQZqFEgRSlLNaBhYYPKBmYMbylkBRVaTDWywhdxc\", \"Type\" : \"Administrator\", \"Company\" : \"Administrator\", \"FirstName\" : \"FirstName\", \"Phones\" : [ \"phone1U\", \"phone2U\", \"phone3U\" ], \"LastName\" : \"LastName\", \"CompanyData\" : { \"Mails\" : [ \"ccccc1@abv.bg\", \"ccccc2@abv.bg\", \"ccccc3@abv.bg\" ], \"Location\" : \"CompanyName\", \"MoreInformation\" : \"CompanyName\", \"Phones\" : [ \"phone1C\", \"phone2C\", \"phone3C\" ], \"Name\" : \"CompanyName\", \"Fax\" : \"faxxxxxx\", \"DisplayName\" : \"CompanyName\" } }";
     [request setHTTPBody:jsonData];
-    //[request setHTTPBody:testData];
     
     //NSString *asdas = [[NSString alloc] initWithData:[request HTTPBody] encoding:NSUTF8StringEncoding];
     //NSLog(@"\n\njsonData encoding:NSUTF8StringEncoding] =>\n %@", asdas);
     
     
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^ (NSURLResponse *response, NSData *data, NSError *error){
-        
-        if (error) {
-            NSLog(@"\n\nAn error =>\n %@", error);
-        }
-        
         NSString* responseText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         
         if (data) {

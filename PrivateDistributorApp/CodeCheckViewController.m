@@ -33,6 +33,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //test
+    [[self CodeText] setText:@"i9q19@abv.bg"];
 }
 
 - (void)didReceiveMemoryWarning

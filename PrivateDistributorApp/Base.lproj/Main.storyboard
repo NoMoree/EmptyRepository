@@ -96,7 +96,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UGP-UH-I2O">
-                                <rect key="frame" x="106" y="282" width="109" height="30"/>
+                                <rect key="frame" x="106" y="217" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Check the code">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,7 +109,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Register" id="4Y5-D3-RFh"/>
-                    <navigationItem key="navigationItem" id="iFe-n1-i3Q"/>
+                    <navigationItem key="navigationItem" title="Register" id="iFe-n1-i3Q"/>
                     <keyCommands/>
                     <connections>
                         <outlet property="CodeText" destination="ZDP-O6-FwT" id="Dj5-O8-Aap"/>
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="159" y="-1067"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Register View Controller - Company Creation-->
         <scene sceneID="IOo-oz-0Ur">
             <objects>
                 <tableViewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N5E-FO-t5I" customClass="RegisterViewController" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tH8-Ij-8mG">
-                                    <rect key="frame" x="99" y="27" width="111" height="21"/>
+                                    <rect key="frame" x="99" y="14" width="111" height="39"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <nil key="highlightedColor"/>
@@ -238,11 +238,13 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.20000000000000001" contentMode="scaleToFill" id="rqW-pK-WF1">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rqW-pK-WF1">
                                     <rect key="frame" x="33" y="582" width="255" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main administrator " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7th-l4-RYc">
@@ -275,7 +277,7 @@
                             <outlet property="delegate" destination="N5E-FO-t5I" id="MLf-CN-cez"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gQe-lr-Y3t"/>
+                    <navigationItem key="navigationItem" title="Company Creation" id="gQe-lr-Y3t"/>
                     <connections>
                         <outlet property="companyAddressText" destination="WP0-qB-5mO" id="Cea-iv-kwY"/>
                         <outlet property="companyEmailText1" destination="tly-X6-ogS" id="hI8-zm-xGt"/>
@@ -329,7 +331,7 @@
                         <attributedString key="userComments">
                             <fragment content="ghjghjgh">
                                 <attributes>
-                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <font key="NSFont" size="11" name="LucidaGrande"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                 </attributes>
                             </fragment>
@@ -422,14 +424,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rS3-R9-Ivy" kind="relationship" relationship="viewControllers" id="S1G-XY-EEO"/>
                         <segue destination="aKN-91-eUb" kind="relationship" relationship="viewControllers" id="Kbt-Yd-k59"/>
                         <segue destination="Eic-J7-ds9" kind="relationship" relationship="viewControllers" id="VcZ-yD-YYS"/>
+                        <segue destination="rS3-R9-Ivy" kind="relationship" relationship="viewControllers" id="SKl-WX-gNB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmM-e9-Mta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-745" y="-405"/>
+            <point key="canvasLocation" x="-751" y="-405"/>
         </scene>
         <!--Log In View Controller - Log In-->
         <scene sceneID="HxS-iT-Agm">
@@ -523,7 +525,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ozk-ay-OSm">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="hGs-te-fFR" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hGs-te-fFR" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1bc-mS-s4z"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8AJ-WB-cL1">
@@ -538,7 +540,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggt-7y-zgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="-885"/>
+            <point key="canvasLocation" x="250" y="-446"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="6Lq-ky-hZk">
@@ -563,7 +565,7 @@
             </objects>
             <point key="canvasLocation" x="1925" y="323"/>
         </scene>
-        <!--Register User View Controller-->
+        <!--Register User View Controller - Register-->
         <scene sceneID="ik6-F6-pwa">
             <objects>
                 <tableViewController storyboardIdentifier="RegisterUserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AGd-N3-c9F" customClass="RegisterUserViewController" sceneMemberID="viewController">
@@ -690,7 +692,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gks-5O-MyG">
-                                    <rect key="frame" x="132" y="96" width="56" height="29"/>
+                                    <rect key="frame" x="20" y="96" width="280" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <nil key="highlightedColor"/>
@@ -742,7 +744,7 @@
                             <outlet property="delegate" destination="AGd-N3-c9F" id="313-EL-Ru6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="X2T-sm-Kbm"/>
+                    <navigationItem key="navigationItem" title="Register" id="X2T-sm-Kbm"/>
                     <connections>
                         <outlet property="EmailText1" destination="FjT-v2-wLp" id="YYY-pU-wd3"/>
                         <outlet property="EmailText2" destination="1mP-6c-8hJ" id="uSo-mN-18a"/>
@@ -757,6 +759,7 @@
                         <outlet property="passwordText" destination="83b-vh-KBV" id="Vyc-ng-rFd"/>
                         <outlet property="secondNameText" destination="uv7-jv-yn8" id="eVM-jz-JcK"/>
                         <outlet property="userTypeLabel" destination="HOU-yH-LtH" id="Bme-or-gIk"/>
+                        <segue destination="hGs-te-fFR" kind="modal" identifier="registeredSegue" customClass="UIStoryboardPopoverSegue" id="TQD-ya-hkZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iop-Ew-Nvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -769,4 +772,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="TQD-ya-hkZ"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -31,4 +31,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *PhoneText3;
 
 - (IBAction)confirmAction:(id)sender;
+
+-(void)autoFillTextField;
 @end

@@ -38,6 +38,7 @@
     }
 }
 
+
 -(BOOL) emailValidation:(NSString *)email{
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest =[NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
@@ -59,8 +60,25 @@
 {
     [super viewDidLoad];
     
+    //testing
+    [self autoFillTextField];
+    
     //Update View For FirstCompanyRegister
     [self configureView];
+}
+
+-(void)autoFillTextField{
+    [[self emailText] setText:@"i9q19@abv.bg"];
+    [[self companyNameText ] setText:@"CompanyName!"];
+    [[self companyEmailText1] setText:@"CompMail1@abv.bg"];
+    [[self companyEmailText2] setText:@"CompMail2@abv.bg"];
+    [[self companyEmailText3] setText:@"CompMail3@abv.bg"];
+    [[self companyPhoneText1] setText:@"CompanyPhone1"];
+    [[self companyPhoneText2] setText:@"CompanyPhone2"];
+    [[self companyPhoneText3] setText:@"CompanyPhone3"];
+    [[self companyFaxText] setText:@"CompanyFax"];
+    [[self companyAddressText] setText:@"Address"];
+    [[self companyMoreInfoText] setText:@"MoreInformation"];
 }
 
 - (void)didReceiveMemoryWarning{
