@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "UserLoged.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    
+    //UserLoged *logedUser	;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UserLoged *logedUser;
 
 @end

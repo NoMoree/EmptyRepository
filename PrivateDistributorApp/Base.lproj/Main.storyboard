@@ -329,7 +329,7 @@
                         <attributedString key="userComments">
                             <fragment content="ghjghjgh">
                                 <attributes>
-                                    <font key="NSFont" size="11" name="LucidaGrande"/>
+                                    <font key="NSFont" metaFont="toolTip"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                 </attributes>
                             </fragment>
@@ -538,7 +538,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggt-7y-zgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285" y="-405"/>
+            <point key="canvasLocation" x="1073" y="-885"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="6Lq-ky-hZk">
@@ -757,7 +757,6 @@
                         <outlet property="passwordText" destination="83b-vh-KBV" id="Vyc-ng-rFd"/>
                         <outlet property="secondNameText" destination="uv7-jv-yn8" id="eVM-jz-JcK"/>
                         <outlet property="userTypeLabel" destination="HOU-yH-LtH" id="Bme-or-gIk"/>
-                        <segue destination="hGs-te-fFR" kind="modal" identifier="registeredSegue" id="9P9-wi-i99"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iop-Ew-Nvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -770,7 +769,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="sdI-js-F8u"/>
-    </inferredMetricsTieBreakers>
 </document>

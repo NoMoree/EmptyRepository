@@ -12,6 +12,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import "AES256.h"
 #import "UserLoged.h"
+#import "AppDelegate.h"
 
 @interface RegisterUserViewController (){
     RegisterRequestModel *_registerRequest;
@@ -307,10 +308,15 @@
     }];
 }
 
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    AppDelegate *appDel=(AppDelegate*)[UIApplication sharedApplication].delegate;
     if ([[segue identifier] isEqualToString:@"registeredSegue"]) {
+        if (!appDel.logedUser) {
+            appDel.logedUser = [[UserLoged alloc]init];
+            //_logedUser
+        }
+        appDel.logedUser = _logedUser;
         //[[segue destinationViewController] setUserInfo:_logedUser];
     }
 }

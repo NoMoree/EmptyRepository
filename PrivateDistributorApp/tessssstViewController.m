@@ -8,6 +8,7 @@
 
 #import "tessssstViewController.h"
 #import "UserLoged.h"
+#import "AppDelegate.h"
 
 @interface tessssstViewController (){
     UserLoged* _logedUser;
@@ -58,6 +59,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    AppDelegate *appDel=(AppDelegate*)[UIApplication sharedApplication].delegate;
+    
+    NSLog(@"username: %@",appDel.logedUser.Username);;//this sn correct!
+    NSLog(@"SessionKey: %@",appDel.logedUser.SessionKey);;//this sn correct!
+    NSLog(@"Company: %@",appDel.logedUser.Company);;//this sn correct!
+    //NSLog(@"1st phone: %@",appDel.logedUser.Phones[1]);;//this sn correct!
+
     
     [self configureView];
 }
